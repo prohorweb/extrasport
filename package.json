@@ -19,6 +19,7 @@
     "server": "npm-run-all --parallel css-watch js-watch pug-watch files-watch browser-sync-watch",
     "deploy": "npm-run-all --parallel css-deploy js-deploy pug-build files-build",
     "gh-deploy": "gh-pages --dist public --branch deploy"
+
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
