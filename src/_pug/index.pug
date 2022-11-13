@@ -37,7 +37,7 @@ html(lang='en')
                     img(src='assets/img/navbar-logo.png', alt='...')
             
                 .d-flex.justify-content-center.flex-grow-1
-                  a.btn.btn-primary.btn-lg.text-uppercase(href='#services') Позвонить нам
+                  a.btn.btn-primary.btn-lg.text-uppercase(href='#callModal', data-bs-toggle='modal') Позвонить нам
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | МЕНЮ
                     i.fas.fa-bars.ms-1
@@ -392,6 +392,7 @@ html(lang='en')
                         a.link-dark.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
+        include includes/callModal
         include includes/portfolio-modal-1
         include includes/portfolio-modal-2
         include includes/portfolio-modal-3

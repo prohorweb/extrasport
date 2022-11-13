@@ -1,0 +1,81 @@
+// Portfolio item 1 modal popup
+#callModal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg' alt='Close modal')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            section#contact.page-section
+                                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                                    .row
+                                        .form-group.mb-5
+
+                                            // Name input
+                                            input#name.form-control(
+                                                type='text',
+                                                placeholder='Ваше имя *',
+                                                data-sb-validations='required'
+                                            )
+                                            .invalid-feedback(data-sb-feedback='name:required')
+                                                | A name is required.
+
+                                        .form-group
+
+                                            // Phone number input
+                                            input#phone.form-control(
+                                                type='tel',
+                                                placeholder='Ваш телефон *',
+                                                data-sb-validations='required'
+                                            )
+                                            .invalid-feedback(data-sb-feedback='phone:required')
+                                                | A phone number is required.
+
+
+                                    // Submit success message
+                                    //
+                                    // This is what your users will see when the form
+                                    // has successfully submitted
+
+                                    #submitSuccessMessage.d-none
+                                        .text-center.text-white.mb-3
+                                            .fw-bolder Form submission successful!
+                                            | To activate this form, sign up at
+                                            br
+                                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+                                    // Submit error message
+                                    //
+                                    // This is what your users will see when there is
+                                    // an error submitting the form
+
+                                    #submitErrorMessage.d-none
+                                        .text-center.text-danger.mb-3 Error sending message!
+
+                                    // Submit Button
+                                    .text-center
+                                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Заказать звонок
+
+
+    //-       .modal-dialog.modal-dialog-centered
+    //-           .modal-content
+    //-             .close-modal(data-bs-dismiss='modal')
+    //-                 img(src='assets/img/close-icon.svg' alt='Close modal')
+    //-             .container
+    //-                 .row.justify-content-center
+    //-                     .col-lg-8
+    //-                         .modal-body
+    //-                             form
+    //-                             .mb-3
+    //-                                 label.form-label(for='exampleInputEmail') Email address
+    //-                                 input#callInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+    //-                                 #emailHelp.form-text We&apos;ll never share your email with anyone else.
+    //-                             .mb-3
+    //-                                 label.form-label(for='exampleInputPassword') Password
+    //-                                 input#callInputPassword1.form-control(type='password')
+    //-                             .mb-3.form-check
+    //-                                 input#exampleCheck1.form-check-input(type='checkbox')
+    //-                                 label.form-check-label(for='callCheck') Check me out
+    //-                             button.btn.btn-primary(type='submit') Submit
