@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <div class="d-flex justify-content-center flex-grow-1"><a class="navbar-brand d-flex align-items-center" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..."></a></div>
-        <div class="d-flex justify-content-center flex-grow-1"><a class="btn btn-primary btn-lg text-uppercase" href="#services">Позвонить нам</a></div>
+        <div class="d-flex justify-content-center flex-grow-1"><a class="btn btn-primary btn-lg text-uppercase" href="#callModal" data-bs-toggle="modal">Позвонить нам</a></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">МЕНЮ<i class="fas fa-bars ms-1"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -336,6 +336,58 @@
       </div>
     </footer>
     <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body">
+                  <section class="page-section" id="contact">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                      <div class="row">
+                        <div class="form-group mb-5">
+                          <!-- Name input-->
+                          <input class="form-control" id="name" type="text" placeholder="Ваше имя *" data-sb-validations="required">
+                          <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                          <!-- Phone number input-->
+                          <input class="form-control" id="phone" type="tel" placeholder="Ваш телефон *" data-sb-validations="required">
+                          <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                      </div>
+                      <!-- Submit success message-->
+                      <!---->
+                      <!-- This is what your users will see when the form-->
+                      <!-- has successfully submitted-->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                          <div class="fw-bolder">Form submission successful!</div>To activate this form, sign up at<br><a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                      </div>
+                      <!-- Submit error message-->
+                      <!---->
+                      <!-- This is what your users will see when there is-->
+                      <!-- an error submitting the form-->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+                      <!-- Submit Button-->
+                      <div class="text-center">
+                        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Заказать звонок</button>
+                      </div>
+                    </form>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Portfolio item 1 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
