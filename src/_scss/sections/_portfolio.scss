@@ -57,20 +57,24 @@
     }
 }
 
-.modal {
+.modal {    
     .modal-content {
         background: $gray-900;
     }
 
+    .modal-body {
+        padding: 3rem;
+    }
+
     .close-modal {
         position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        width: 3rem;
-        height: 3rem;
+        top: 0.8rem;
+        right: 0.8rem;
+        width: 1.75rem;
         cursor: pointer;
         background-color: transparent;
         filter: contrast(0);
+        z-index: 1;
 
         &:hover {
             opacity: 0.3;

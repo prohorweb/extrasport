@@ -4,8 +4,6 @@
 
 header.masthead {
     height: 100vh;
-    padding-top: 6rem + 4.5rem;
-    padding-bottom: 6rem;
     text-align: center;
     color: $white;
     background-image: url("../../assets/img/header-bg.png");
@@ -16,8 +14,16 @@ header.masthead {
     background-blend-mode: overlay;
     background-color: $black-transparency_5;
 
+    .masthead-heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 5.25rem;
+        margin-bottom: 2rem;
+        font-family: $headings-font-family;
+    }
+
     .masthead-subheading {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: $headings-font-family;
@@ -25,31 +31,24 @@ header.masthead {
         text-transform: uppercase; 
     }
 
-    .masthead-heading {
-        font-size: 2.25rem;
-        font-weight: 700;
-        line-height: 4.25rem;
-        margin-bottom: 2rem;
-        font-family: $headings-font-family;
-    }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(sm) {
     header.masthead {
-        padding-top: 12.5rem + 4.5rem;
-        padding-bottom: 12.5rem;
+
+        .masthead-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3.5rem;
+            margin-bottom: 4rem;
+        }
 
         .masthead-subheading {
-            font-size: 2.25rem;
+            font-size: 1.25rem;
             line-height: 2.25rem;
             margin-bottom: 2rem;
         }
 
-        .masthead-heading {
-            font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 6.5rem;
-            margin-bottom: 4rem;
-        }
+        
     }
 }
