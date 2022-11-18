@@ -50,3 +50,8 @@ p {
         padding: 9rem 0;
     }
 }
+
+
+.offcanvas-size-sm {
+    --#{$prefix}offcanvas-width: min(95vw, 250px) !important;
+}

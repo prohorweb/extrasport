@@ -1,27 +1,39 @@
-nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
     .container
-        .d-flex.justify-content-center.flex-grow-1
+        .logo
             a.navbar-brand.d-flex.align-items-center(href='#page-top')
                 img(src='assets/img/navbar-logo.png' alt='extrasport logo')
 
-        .d-flex.justify-content-center.flex-grow-1
-            a.btn.btn-primary.btn-lg(href='#callModal' data-bs-toggle='modal') Позвонить нам
-        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
-            | МЕНЮ
-            i.fas.fa-bars.ms-1 
-        #navbarResponsive.collapse.navbar-collapse
-            ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
-                li.nav-item
-                    a.nav-link(href='#services') О клубе
-                li.nav-item
-                    a.nav-link(href='#services') Услуги
-                li.nav-item
-                    a.nav-link(href='#portfolio') Акции
-                li.nav-item
-                    a.nav-link(href='#about') Цены
-                li.nav-item
-                    a.nav-link(href='#team') Новости
-                li.nav-item
-                    a.nav-link(href='#team') Мероприятия
-                li.nav-item
-                    a.nav-link(href='#contact') Контакты
+        .call.d-lg-none.d-md-block.d-none
+            a(href='#callModal' data-bs-toggle='modal')
+                .btn.btn-primary.btn-lg
+                    i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                    |Обратный звонок  
+        button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasDarkNavbar' aria-controls='offcanvasDarkNavbar')
+            span.navbar-toggler-icon
+        #offcanvasDarkNavbar.offcanvas.offcanvas-end.text-bg-dark.offcanvas-size-sm(tabindex='-1' aria-labelledby='offcanvasDarkNavbarLabel')
+            .offcanvas-header
+                h5#offcanvasDarkNavbarLabel.offcanvas-title EXTRASPORT ПИТЕР
+                button.btn-close.btn-close-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+            .offcanvas-body.justify-content-center
+                ul.navbar-nav.text-uppercase
+                    li.nav-item
+                        a.nav-link(href='#services') О клубе
+                    li.nav-item
+                        a.nav-link(href='#services') Услуги
+                    li.nav-item
+                        a.nav-link(href='#portfolio') Акции
+                    li.nav-item
+                        a.nav-link(href='#about') Цены
+                    li.nav-item
+                        a.nav-link(href='#team') Новости
+                    li.nav-item
+                        a.nav-link(href='#team') Мероприятия
+                    li.nav-item
+                        a.nav-link(href='#contact') Контакты
+                    li.nav-item
+        .call.d-lg-block.d-none
+            a(href='#callModal' data-bs-toggle='modal')
+                .btn.btn-primary.btn-lg
+                    i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                    |Обратный звонок
