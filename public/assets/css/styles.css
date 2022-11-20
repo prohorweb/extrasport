@@ -8559,19 +8559,88 @@ header.masthead {
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 50%);
     background-size: 3px 3px;
     z-index: 2; }
-  .bg-video-wrap h1, .bg-video-wrap .h1 {
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 3;
-    max-width: 400px;
-    width: 100%;
-    height: 50px; }
+    .bg-video-wrap .overlay .slider {
+      max-width: 600px;
+      margin: 20px auto;
+      position: relative;
+      font-size: 40px;
+      text-align: center; }
+      .bg-video-wrap .overlay .slider .slide1,
+      .bg-video-wrap .overlay .slider .slide2,
+      .bg-video-wrap .overlay .slider .slide3,
+      .bg-video-wrap .overlay .slider .slide4 {
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-size: 4rem; }
+      .bg-video-wrap .overlay .slider .slide1 {
+        animation: fade 18s infinite;
+        -webkit-animation: fade 18s infinite; }
+      .bg-video-wrap .overlay .slider .slide2 {
+        animation: fade2 19s infinite;
+        -webkit-animation: fade2 19s infinite; }
+      .bg-video-wrap .overlay .slider .slide3 {
+        animation: fade3 19s infinite;
+        -webkit-animation: fade3 19s infinite; }
+      .bg-video-wrap .overlay .slider .slide4 {
+        animation: fade4 19s infinite;
+        -webkit-animation: fade4 19s infinite; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade3 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade4 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 #portfolio .portfolio-item {
   max-width: 26rem;
