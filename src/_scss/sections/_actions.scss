@@ -1,0 +1,15 @@
+.card {
+  border: none;
+  background-color: $black;
+  a {
+    text-decoration: none;
+  }
+
+  .card-body:hover {
+    background-color: #d95700;
+    color: $white;
+    .btn-arrow {
+      color: $white;
+    }
+  }
+}

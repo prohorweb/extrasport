@@ -3,108 +3,102 @@
 //
 
 #mainNav {
-    font-size: .5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: $black-transparency_5;
-    transition: padding-top 0.3s ease-in-out,
-        padding-bottom 0.3s ease-in-out;
+  font-size: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background-color: $black-transparency_5;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 
-    .navbar-toggler {
-        font-family: $headings-font-family;
-        text-transform: uppercase;
-        font-weight: $font-weight-bold;
-        padding: 0;
-        border: 0;
+  .navbar-toggler {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    padding: 0;
+    border: 0;
+  }
+
+  .navbar-brand {
+    color: $primary;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    letter-spacing: $headings-letter-spacing;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+
+    img {
+      height: 3.25em;
     }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  &.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $gray-900;
 
     .navbar-brand {
-        color: $primary;
+      font-size: 1.25em;
+
+      svg,
+      img {
+        height: 3em;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 0.25rem;
+
+      .nav-link {
         font-family: $headings-font-family;
-        font-weight: $headings-font-weight;
+        color: $white;
         letter-spacing: $headings-letter-spacing;
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 1.5em;
-        transition: font-size 0.3s ease-in-out;
+        white-space: nowrap;
+        font-size: 2em;
 
-        img {
-            height: 3.25em;
+        &.active,
+        &:hover {
+          color: $primary;
         }
-    }
 
-    .navbar-collapse {
-        flex-grow: 0;
-    }
-
-    &.navbar-shrink {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        background-color: $gray-900;
-
-        .navbar-brand {
-            font-size: 1.25em;
-
-            svg,
-            img {
-                height: 3em;
-            }
+        &:last-child {
+          margin-right: 0;
         }
+      }
     }
-
-    .navbar-nav {
-        .nav-item {
-            margin: 0 .25rem;
-
-            .nav-link {
-                font-family: $headings-font-family;
-                color: $white;
-                letter-spacing: $headings-letter-spacing;
-                white-space: nowrap;
-                font-size: 2em;
-
-                &.active,
-                &:hover {
-                    color: $primary;
-                }
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-    }
+  }
 }
 
 @include media-breakpoint-down(xl) {
-    #mainNav {
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    font-size: 1.5em;
-                }
-            }
+  #mainNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 1.5em;
         }
+      }
     }
-
+  }
 }
 
 @include media-breakpoint-down(lg) {
-    #mainNav {
-        background-color: $gray-900;
-    }
-    header.masthead {
-        margin-top: 5rem;
-    }
-
+  #mainNav {
+    background-color: $gray-900;
+  }
+  header.masthead {
+    margin-top: 5rem;
+  }
 }
 
 @include media-breakpoint-down(sm) {
-
-    // .navbar-brand img {
-    //     margin-bottom: 1rem;
-    // }
+  // .navbar-brand img {
+  //     margin-bottom: 1rem;
+  // }
 }
-
-
