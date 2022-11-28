@@ -8405,11 +8405,10 @@ p {
   line-height: 1.75; }
 
 .page-section {
-  padding: 3rem 0; }
+  padding-top: 3rem; }
   .page-section h2.section-heading, .page-section .section-heading.h2 {
-    font-size: 2.5rem;
     margin-top: 0;
-    margin-bottom: 1rem; }
+    margin-bottom: 3rem; }
   .page-section h3.section-subheading, .page-section .section-subheading.h3 {
     font-size: 1rem;
     font-weight: 400;
@@ -8425,10 +8424,15 @@ p {
   border-color: unset; }
 
 .btn-xl {
+  background: none;
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 700;
-  padding: 1.25rem 2.5rem; }
+  padding: 0.5rem 1rem;
+  color: #ff6600;
+  white-space: nowrap;
+  border: 0.1em solid;
+  text-transform: uppercase; }
 
 .btn-lg, .btn-group-lg > .btn {
   background: none;
@@ -8572,7 +8576,7 @@ header.masthead {
     .bg-video-wrap .overlay .slider {
       margin: 20px auto;
       position: relative;
-      font-size: 40px;
+      font-size: 7vmin;
       text-align: center; }
       .bg-video-wrap .overlay .slider .slide1,
       .bg-video-wrap .overlay .slider .slide2,
@@ -8581,7 +8585,6 @@ header.masthead {
         color: white;
         width: 100%;
         height: 100%;
-        font-size: 1em;
         text-shadow: 0px 0px 0 #bcbcbc, 1px 1px 0 #797979, 2px 2px 0 #363636, 3px 3px 2px rgba(0, 0, 0, 0.28), 3px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2); }
       .bg-video-wrap .overlay .slider .slide1 {
         animation: fade 18s infinite;
@@ -8652,15 +8655,16 @@ header.masthead {
   100% {
     opacity: 0; } }
 
-.card {
-  border: none;
-  background-color: #141416; }
-  .card a {
+section#actions .card {
+  background-color: #141416;
+  margin-bottom: 1.5rem;
+  border: none; }
+  section#actions .card a {
     text-decoration: none; }
-  .card .card-body:hover {
+  section#actions .card .card-body:hover {
     background-color: #d95700;
     color: #fff; }
-    .card .card-body:hover .btn-arrow {
+    section#actions .card .card-body:hover .btn-arrow {
       color: #fff; }
 
 section#contact {
