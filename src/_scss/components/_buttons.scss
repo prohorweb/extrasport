@@ -10,10 +10,15 @@
 // Create a new xl button variant
 
 .btn-xl {
+  background: none;
   font-family: $headings-font-family;
   font-size: 1.125rem;
   font-weight: $headings-font-weight;
-  padding: 1.25rem 2.5rem;
+  padding: 0.5rem 1rem;
+  color: $orange;
+  white-space: nowrap;
+  border: 0.1em solid;
+  text-transform: uppercase;
 }
 
 .btn-lg {
