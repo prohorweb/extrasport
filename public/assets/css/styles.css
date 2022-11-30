@@ -8708,6 +8708,70 @@ section#contact {
     font-weight: 700;
     color: #ced4da; }
 
+.map-section {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0; }
+  .map-section .container {
+    height: 100%; }
+
+.map-section__map {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .map-section__map img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; }
+
+.map-section__contacts {
+  background-color: #00000090;
+  padding: 9rem 8rem;
+  max-width: 630px; }
+
+.map-section__title {
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+
+.map-section__phone {
+  padding-left: 35px;
+  background: url(../img/contact-phone.png) 0 50% no-repeat;
+  margin-bottom: 2.5rem; }
+
+.map-section__zvon {
+  margin-left: 3rem;
+  color: #f60;
+  text-transform: uppercase; }
+
+.map-section__adres {
+  padding-left: 35px;
+  background: url(../img/contact-adres.png) 0 50% no-repeat;
+  margin-bottom: 2.5rem; }
+
+.map-section__metro {
+  padding-left: 35px;
+  background: url(../img/contact-metro.png) 0 50% no-repeat;
+  margin-bottom: 2.5rem; }
+
+.map-section__time {
+  padding-left: 35px;
+  background: url(../img/contact-time.png) 0 50% no-repeat;
+  margin-bottom: 2.5rem; }
+
+.map-section__prodag {
+  padding-left: 35px;
+  background: url(../img/contact-prodag.png) 0 50% no-repeat;
+  margin-bottom: 2.5rem; }
+
+.map-section__mail {
+  padding-left: 35px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxNCAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQgMTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjRkY2NjAwIiBkPSJNNywwSDB2NC43VjEwaDdoN1Y0LjdWMEg3eiBNNywxLjZoNS40djAuN0w3LDUuMkwxLjYsMi4zVjEuNkg3eiBNMTIuNCw4LjVIN0gxLjZWNC43VjRMNyw3TDEyLjQsNHYwLjZWOC41egoJIi8+Cjwvc3ZnPgo=") 0 50%/18px auto no-repeat;
+  margin-bottom: 2.5rem; }
+
 .footer {
   text-align: center;
   font-size: 0.9rem;

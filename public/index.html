@@ -174,12 +174,66 @@
       </div>
       <!-- Submit Button-->
       <div class="text-center">
-        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button>
+        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message
+          <!-- Map-->
+        </button>
       </div>
     </form>
   </div>
 </section>
-<!-- Portfolio Modals-->
+<section class="map-section">
+  <div class="container">
+    <div class="map-section__contacts">
+      <h2 class="map-section__title section-heading text-uppercase">&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;</h2>
+      <div class="map-section__phone"><a href="tel:+78125655629">+7 812 565 56 29</a><a class="popup-to map-section__zvon" href="#zvon-popup">&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;</a></div>
+      <div class="map-section__adres">&Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</div>
+      <div class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</div>
+      <div class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</div>
+      <div class="map-section__prodag mb0">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</div>
+    </div>
+  </div>
+  <div class="map-section__map" id="map"> </div>
+</section>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"> </script>
+<script>
+   ymaps.ready(init);
+   function init () {
+   // Создание экземпляра карты и его привязка к контейнеру с
+   // заданным id ("map")
+   var myMap = new ymaps.Map('map', {
+   // При инициализации карты, обязательно нужно указать
+   // ее центр и коэффициент масштабирования
+   center: [59.85360052406893,30.342187441412534],
+   zoom: 16,
+   controls: []
+   },{suppressMapOpenBlock: true});
+   var pixelCenter = myMap.getGlobalPixelCenter();
+   pixelCenter = [
+   pixelCenter[0] - 200, // Смещение на 200 пикселей вправо
+   pixelCenter[1]
+   ];
+   var geoCenter = myMap.options.get('projection').fromGlobalPixels(pixelCenter, myMap.getZoom());
+   myMap.setCenter(geoCenter);
+   //myMap.controls.add('zoomControl', { top: 75, left: 5 });
+   //myMap.behaviors.enable('scrollZoom');
+   // Создание метки
+   var myPlacemark = new ymaps.Placemark(
+   // Координаты метки
+  [59.85360052406893,30.342187441412534], {
+   // Свойства
+   // Текст метки
+   hintContent: 'ExtraSport'
+   }, {
+   iconLayout: 'default#image',
+   iconImageHref: 'assets/img/marker.png', // картинка иконки
+   iconImageSize: [57, 80], // размеры картинки
+   iconImageOffset: [-28, -80] // смещение картинки
+   });
+   // Добавление метки на карту
+   myMap.geoObjects.add(myPlacemark);
+   }
+</script>
+<!-- Modals-->
 <!-- Portfolio item 1 modal popup-->
 <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
