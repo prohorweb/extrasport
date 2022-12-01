@@ -1,14 +1,24 @@
 section#actions {
   .card {
-    background-color: $black;
+    background-color: $black-transparency_5;
     margin-bottom: 1.5rem;
     border: none;
+
+    .date-action {
+      font-family: $headings-font-family;
+      background-color: $orange;
+      padding: .5rem;
+      position: absolute;
+      text-align: left;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
     a {
       text-decoration: none;
     }
 
     .card-body:hover {
-      background-color: #d95700;
+      background-color:$orange;
       color: $white;
       .btn-arrow {
         color: $white;

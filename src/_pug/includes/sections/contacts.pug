@@ -13,65 +13,50 @@ section#contact.page-section
         // to get an API token!
 
         form#contactForm(data-sb-form-api-token='API_TOKEN')
-            .row.align-items-stretch.mb-5
+            .row.align-items-stretch.mb-3
+
+                .col-md-6
+                    p Хотите больше узнать о нашем клубе? Оставьте заявку, и наши менеджеры проведут для вас подробную экскурсию. 
+
+                    p Для тех, кому экскурсии мало мы предлагаем «фитнес тест-драйв» — безлимитную неделю фитнеса, чтобы вы могли окончательно понять, насколько вам комфортно у нас.
                 .col-md-6
                     .form-group
 
                         // Name input
                         input#name.form-control(
                             type='text',
-                            placeholder='Your Name *',
+                            placeholder='Ваше имя *',
                             data-sb-validations='required'
                         )
                         .invalid-feedback(data-sb-feedback='name:required')
-                            | A name is required.
+                            | Имя обязательно *
 
                     .form-group
-
-                        // Email address input
-                        input#email.form-control(
-                            type='email',
-                            placeholder='Your Email *',
-                            data-sb-validations='required,email'
-                        )
-                        .invalid-feedback(data-sb-feedback='email:required')
-                            | An email is required.
-                        .invalid-feedback(data-sb-feedback='email:email')
-                            | Email is not valid.
-
-                    .form-group.mb-md-0
 
                         // Phone number input
                         input#phone.form-control(
                             type='tel',
-                            placeholder='Your Phone *',
+                            placeholder='Ваш телефон*',
                             data-sb-validations='required'
                         )
                         .invalid-feedback(data-sb-feedback='phone:required')
-                            | A phone number is required.
-
-                .col-md-6
-                    .form-group.form-group-textarea.mb-md-0
-
-                        // Message input
-                        textarea#message.form-control(
-                            placeholder='Your Message *',
-                            data-sb-validations='required'
-                        )
-                        .invalid-feedback(data-sb-feedback='message:required')
-                            | A message is required.
-
-            // Submit success message
+                            | Телефон обязательно *
+                        .checkbox
+                            input#soglas-2(type='checkbox', name='accept', value='1')
+                            |  
+                            label(for='soglas-2')
+                            | &Ocy;&zcy;&ncy;&acy;&kcy;&ocy;&mcy;&lcy;&iecy;&ncy; &scy; 
+                            a(href='/privacy/', target='_blank') &pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&ocy;&jcy; &kcy;&ocy;&ncy;&fcy;&icy;&dcy;&iecy;&ncy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ocy;&scy;&tcy;&icy;
+                                // Submit success message
             //
             // This is what your users will see when the form
             // has successfully submitted
 
             #submitSuccessMessage.d-none
                 .text-center.text-white.mb-3
-                    .fw-bolder Form submission successful!
-                    | To activate this form, sign up at
+                    .fw-bolder Заявка отправлена!
                     br
-                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                    a(href='#') 
 
             // Submit error message
             //
@@ -83,4 +68,4 @@ section#contact.page-section
 
             // Submit Button
             .text-center
-                button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+                button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Записаться

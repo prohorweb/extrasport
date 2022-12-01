@@ -82,34 +82,40 @@
     </div>
     <div class="row text-center">
       <div class="col-lg-4 col-md-6">
-        <div class="card"><img class="card-img-top" src="assets/img/act_1.png" alt="..."><a class="card-body p-0" href="#">
+        <div class="card">
+          <div class="date-action">До 31 декабря</div><img class="card-img-top" src="assets/img/act_1.png" alt="..."><a class="card-body p-0" href="#">
             <div class="d-flex">
               <div class="w-100 py-2">
                 <h5 class="card-title">Чёрная пятница!!!</h5>
                 <div class="card-text">Скидки от 50% до 80%!</div>
               </div>
               <div class="btn-arrow d-flex align-items-center"><i class="fa-sharp fa-solid fa-arrow-right"> </i></div>
-            </div></a></div>
+            </div></a>
+        </div>
       </div>
       <div class="col-lg-4 col-md-6"> 
-        <div class="card"><img class="card-img-top" src="assets/img/act_2.png" alt="..."><a class="card-body p-0" href="#">
+        <div class="card">
+          <div class="date-action">До 31 декабря</div><img class="card-img-top" src="assets/img/act_2.png" alt="..."><a class="card-body p-0" href="#">
             <div class="d-flex">
               <div class="w-100 py-2">
                 <h5 class="card-title">Чёрная пятница!!!</h5>
                 <div class="card-text">Скидки от 50% до 80%!</div>
               </div>
               <div class="btn-arrow d-flex align-items-center"><i class="fa-sharp fa-solid fa-arrow-right">  </i></div>
-            </div></a></div>
+            </div></a>
+        </div>
       </div>
       <div class="col-lg-4">
-        <div class="card"><img class="card-img-top" src="assets/img/act_3.png" alt="..."><a class="card-body p-0" href="#">
+        <div class="card">
+          <div class="date-action">До 31 декабря</div><img class="card-img-top" src="assets/img/act_3.png" alt="..."><a class="card-body p-0" href="#">
             <div class="d-flex">
               <div class="w-100 py-2">
                 <h5 class="card-title">Чёрная пятница!!!</h5>
                 <div class="card-text">Скидки от 50% до 80%!</div>
               </div>
               <div class="btn-arrow d-flex align-items-center"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
-            </div></a></div>
+            </div></a>
+        </div>
       </div>
     </div>
     <div class="d-flex justify-content-center">  <a class="btn btn-primary btn-xl" href="#">Все акции
@@ -129,40 +135,35 @@
     <!-- https://startbootstrap.com/solution/contact-forms-->
     <!-- to get an API token!-->
     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-      <div class="row align-items-stretch mb-5">
+      <div class="row align-items-stretch mb-3">
+        <div class="col-md-6">
+          <p>Хотите больше узнать о нашем клубе? Оставьте заявку, и наши менеджеры проведут для вас подробную экскурсию. </p>
+          <p>Для тех, кому экскурсии мало мы предлагаем «фитнес тест-драйв» — безлимитную неделю фитнеса, чтобы вы могли окончательно понять, насколько вам комфортно у нас.</p>
+        </div>
         <div class="col-md-6">
           <div class="form-group">
             <!-- Name input-->
-            <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required">
-            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            <input class="form-control" id="name" type="text" placeholder="Ваше имя *" data-sb-validations="required">
+            <div class="invalid-feedback" data-sb-feedback="name:required">Имя обязательно *</div>
           </div>
           <div class="form-group">
-            <!-- Email address input-->
-            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email">
-            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-          </div>
-          <div class="form-group mb-md-0">
             <!-- Phone number input-->
-            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required">
-            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group form-group-textarea mb-md-0">
-            <!-- Message input-->
-            <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+            <input class="form-control" id="phone" type="tel" placeholder="Ваш телефон*" data-sb-validations="required">
+            <div class="invalid-feedback" data-sb-feedback="phone:required">Телефон обязательно *</div>
+            <div class="checkbox">
+              <input id="soglas-2" type="checkbox" name="accept" value="1"> 
+              <label for="soglas-2"></label>&Ocy;&zcy;&ncy;&acy;&kcy;&ocy;&mcy;&lcy;&iecy;&ncy; &scy; <a href="/privacy/" target="_blank">&pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&ocy;&jcy; &kcy;&ocy;&ncy;&fcy;&icy;&dcy;&iecy;&ncy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ocy;&scy;&tcy;&icy;
+                <!-- Submit success message--></a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Submit success message-->
       <!---->
       <!-- This is what your users will see when the form-->
       <!-- has successfully submitted-->
       <div class="d-none" id="submitSuccessMessage">
         <div class="text-center text-white mb-3">
-          <div class="fw-bolder">Form submission successful!</div>To activate this form, sign up at<br><a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+          <div class="fw-bolder">Заявка отправлена!</div><br><a href="#"> </a>
         </div>
       </div>
       <!-- Submit error message-->
@@ -174,7 +175,7 @@
       </div>
       <!-- Submit Button-->
       <div class="text-center">
-        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message
+        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Записаться
           <!-- Map-->
         </button>
       </div>
@@ -241,7 +242,7 @@
       <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="modal-body">
+          <div class="modal-body p-5">
             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
               <div class="row">
                 <div class="form-group mb-4">

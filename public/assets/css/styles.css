@@ -8405,10 +8405,10 @@ p {
   line-height: 1.75; }
 
 .page-section {
-  padding-top: 3rem; }
+  padding: 5rem 0; }
   .page-section h2.section-heading, .page-section .section-heading.h2 {
     margin-top: 0;
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
   .page-section h3.section-subheading, .page-section .section-subheading.h3 {
     font-size: 1rem;
     font-weight: 400;
@@ -8515,6 +8515,21 @@ p {
     background-color: #212529; }
   header.masthead {
     margin-top: 5rem; } }
+
+.modal .modal-content {
+  background: #212529; }
+
+.modal .close-modal {
+  position: absolute;
+  top: .8rem;
+  right: .8rem;
+  width: 1.75rem;
+  cursor: pointer;
+  background-color: transparent;
+  filter: contrast(0);
+  z-index: 1; }
+  .modal .close-modal:hover {
+    opacity: 0.3; }
 
 header.masthead {
   height: 100vh;
@@ -8656,19 +8671,27 @@ header.masthead {
     opacity: 0; } }
 
 section#actions .card {
-  background-color: #141416;
+  background-color: #00000070;
   margin-bottom: 1.5rem;
   border: none; }
+  section#actions .card .date-action {
+    font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #ff6600;
+    padding: .5rem;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.1; }
   section#actions .card a {
     text-decoration: none; }
   section#actions .card .card-body:hover {
-    background-color: #d95700;
+    background-color: #ff6600;
     color: #fff; }
     section#actions .card .card-body:hover .btn-arrow {
       color: #fff; }
 
 section#contact {
-  background-color: #212529;
+  background-color: #00000070;
   background-image: url("../../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center; }
@@ -8678,7 +8701,7 @@ section#contact {
     margin-bottom: 1.5rem; }
     section#contact form#contactForm .form-group input,
     section#contact form#contactForm .form-group textarea {
-      padding: 1.25rem; }
+      padding: .5rem; }
     section#contact form#contactForm .form-group input.form-control {
       height: auto; }
   section#contact form#contactForm .form-group-textarea {
@@ -8691,6 +8714,8 @@ section#contact {
   section#contact form#contactForm .form-control:focus {
     border-color: #ff6600;
     box-shadow: none; }
+  section#contact form#contactForm .checkbox {
+    margin-top: .5rem; }
   section#contact form#contactForm ::-webkit-input-placeholder {
     font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
