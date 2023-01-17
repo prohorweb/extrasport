@@ -3,11 +3,14 @@
         .logo 
             a.navbar-brand.d-flex.align-items-center.justify-content-center(href='#page-top')
                 img(src='assets/img/logo.svg' alt='extrasport logo')
-            .logo__adress.d-flex.align-items-center.justify-content-center
-                i.fa-solid.fa-location-dot.pe-1 
-                span.me-1 Ваш клуб:
-                a.popup-to(href='#club-popup') СПб, ул. Типанова, 21, ТК «Питер» 
-                    i.fa-solid.fa-chevron-down
+            .navbar__adress.d-block.d-lg-none
+                .aderss-section.d-flex.justify-content-center
+                    i.fa-solid.fa-location-dot.pe-1 
+                    span.me-1 Ваш клуб:
+                    a.popup-to(href='#club-popup') СПб, ул. Типанова, 21, ТК «Питер» 
+                     i.fa-solid.fa-chevron-down
+                .aderss-section.d-flex.justify-content-center
+                    a.header-contacts__phone.fs-6(href='tel:+78125655613') +7 812 565 56 13
         .call.d-lg-none.d-md-block.d-none 
             a(href='#callModal' data-bs-toggle='modal') 
                 .btn.btn-primary.btn-lg
@@ -18,6 +21,15 @@
                 span МЕНЮ
                 span.navbar-toggler-icon
         #offcanvasDarkNavbar.offcanvas.offcanvas-end.text-bg-dark.offcanvas-size-sm(tabindex='-1' aria-labelledby='offcanvasDarkNavbarLabel')
+            .d-none.d-lg-block
+                .navbar__adress.d-flex.align-items-center.justify-content-center
+                    .aderss-section
+                        i.fa-solid.fa-location-dot.pe-1 
+                        span.me-1 Ваш клуб:
+                        a.popup-to(href='#club-popup') СПб, ул. Типанова, 21, ТК «Питер» 
+                         i.fa-solid.fa-chevron-down
+                    .aderss-section
+                        a.ms-3.header-contacts__phone(href='tel:+78125655613') +7 812 565 56 13
             .offcanvas-header
                 h5#offcanvasDarkNavbarLabel.offcanvas-title EXTRASPORT ПИТЕР
                 button.btn-close.btn-close-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')

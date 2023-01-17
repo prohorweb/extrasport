@@ -11,8 +11,8 @@
   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 
     
-  .logo__adress {
-    font-size: .7rem;
+  .navbar__adress {
+    font-size: .75rem;
     margin-top: .5rem;
   }
 
@@ -34,7 +34,7 @@
     transition: font-size 0.3s ease-in-out;
 
     img {
-      height: 3.25em;
+      height: 3rem;
     }
   }
 
@@ -52,7 +52,7 @@
 
       svg,
       img {
-        height: 3em;
+        height: 2.5rem;
       }
     }
   }
