@@ -203,13 +203,17 @@
 </section>
 <section class="map-section">
   <div class="container">
-    <div class="map-section__contacts">
-      <h2 class="map-section__title section-heading text-uppercase">&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;</h2>
-      <div class="map-section__phone"><a href="tel:+78125655629">+7 812 565 56 29</a><a class="popup-to map-section__zvon" href="#zvon-popup">&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;</a></div>
-      <div class="map-section__adres">&Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</div>
-      <div class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</div>
-      <div class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</div>
-      <div class="map-section__prodag mb0">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</div>
+    <div class="row d-flex justify-content-start">
+      <div class="map-section__contacts col-lg-4">
+        <h2 class="text-center map-section__title section-heading">Контакты</h2>
+        <ul class="map-section__list"> 
+          <li class="map-section__phone"><i class="fa-regular fa-mobile fs-4"></i><a class="fs-4" href="tel:+78125655629">+7 812 565 56 29</a></li>
+          <li class="map-section__adres">&Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</li>
+          <li class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</li>
+          <li class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
+          <li class="map-section__prodag">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="map-section__map" id="map"> </div>
@@ -303,12 +307,46 @@
   </div>
 </div>
 <!-- Footer-->
-<footer class="footer py-4">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-      <div class="col-lg-4 my-3 my-lg-0"><a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
-      <div class="col-lg-4 text-lg-end"><a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a><a class="link-dark text-decoration-none" href="#!">Terms of Use</a></div>
+<footer>
+  <div class="footer-top py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-lg-7">
+              <ul class="map-section__list p-0">
+                <li class="map-section__phone"><i class="fa-regular fa-mobile"></i><a href="tel:+78125655629">+7 812 565 56 29</a></li>
+                <li class="map-section__adres">&Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</li>
+                <li class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</li>
+              </ul>
+            </div>
+            <div class="col-lg-5">
+              <ul class="map-section__list p-0">
+                <li class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
+                <li class="map-section__prodag">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="d-flex justify-content-evenly"><a class="fa-brands fa-vk fs-1" href="https://vk.com/extrasport_ru" target="_blunk"></a><a class="fa-brands fa-youtube fs-1" href="https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured" target="_blunk"></a></div>
+        </div>
+        <div class="col-md-3">
+          <div class="call d-flex justify-content-evenly"><a href="#callModal" data-bs-toggle="modal">
+              <div class="btn btn-primary btn-lg fs-6"><i class="fa-sharp fa-solid fa-phone-arrow-down-left me-1"></i>Заказать звонок</div></a></div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer__api d-flex flex-column text-center"><a class="my-3" href="https://itunes.apple.com/ru/app/extra-sport/id1462883244?mt=8" onclick="ym(21525628, 'reachGoal', 'download_app');"><img class="w-100" src="assets/img/app-store.png" alt=""></a><a class="my-3" href="https://play.google.com/store/apps/details?id=air.com.extrasport" onclick="ym(21525628, 'reachGoal', 'download_app');"><img class="w-100" src="assets/img/goo-play.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom col-lg-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-md-start">&copy; 2023 ExtraSport, LLC</div>
+        <div class="col-md-8 text-md-end"><a class="text-decoration-none me-2" href="#!">Правила поведения в клубе &nbsp; |</a><a class="text-decoration-none" href="#!">Правовая информация</a></div>
+      </div>
     </div>
   </div>
 </footer>
