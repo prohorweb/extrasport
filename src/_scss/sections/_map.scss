@@ -27,20 +27,27 @@
 .map-section__title {
 	text-transform: uppercase;
 	margin: 2rem 0;
-	text-align: center;
 }
 
 .map-section__list{
 	list-style: none;
+	margin: 0;
 }
 
 .map-section__list li{
 	padding-left: 2rem;
-	margin-bottom: 2.5rem;
+	margin: .75rem 0;
 }
 
 .map-section__phone {
-	background: url(../img/contact-phone.png) 0 50% no-repeat;
+	padding: 0 !important;
+	letter-spacing: .1rem;
+	// background: url(../img/contact-phone.png) 0 50% no-repeat;
+}
+
+.map-section__phone .fa-mobile{
+	padding-right: 1rem;
+	color: $orange;
 }
 
 .map-section__adres {
