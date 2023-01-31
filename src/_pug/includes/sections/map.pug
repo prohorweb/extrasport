@@ -1,22 +1,24 @@
 section.map-section
     .container
-        .map-section__contacts
-            h2.map-section__title.section-heading.text-uppercase &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
-            .map-section__phone
-                a(href='tel:+78125655629') +7 812 565 56 29
-                a.popup-to.map-section__zvon(href='#zvon-popup') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
-            .map-section__adres &Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;
-            .map-section__metro &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;
-            .map-section__time
-                | &Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;
-                br
-                |  &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00
-                br
-                |  &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00
-            .map-section__prodag.mb0
-                | &Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:
-                br
-                |  &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00
+        .row.d-flex.justify-content-start
+            .map-section__contacts.col-lg-5
+                h2.map-section__title.section-heading &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
+                ul.map-section__list 
+                    li.map-section__phone
+                        a.fs-5(href='tel:+78125655629') +7 812 565 56 29
+                        //- a.popup-to.map-section__zvon(href='#zvon-popup') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+                    li.map-section__adres &Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;
+                    li.map-section__metro &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;
+                    li.map-section__time
+                        | &Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;
+                        br
+                        |  &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00
+                        br
+                        |  &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00
+                    li.map-section__prodag
+                        | &Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:
+                        br
+                        |  &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00
     #map.map-section__map 
 
 //- script(src='https://api-maps.yandex.ru/2.0/?load=package.full&lang=?lang=ru_RU') 

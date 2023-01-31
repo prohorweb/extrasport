@@ -1,18 +1,68 @@
-footer.footer.py-4
+footer.footer
         .container
             .row.align-items-center
-                .col-lg-4.text-lg-start
-                    | Copyright &copy; Your Website 2022
-                .col-lg-4.my-3.my-lg-0
-                    a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                        i.fab.fa-twitter
-                    a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                        i.fab.fa-facebook-f
-                    a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                        i.fab.fa-linkedin-in
-                .col-lg-4.text-lg-end
-                    a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                    a.link-dark.text-decoration-none(href='#!') Terms of Use
+                .col-lg-6.col-md-5
+                    .row.justify-content-center.align-items-center
+                        .col-lg-6.my-3.my-lg-0
+                                .map-section__phone
+                                    a(href='tel:+78125655629') +7 812 565 56 29
+                                    a.popup-to.map-section__zvon(href='#zvon-popup') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+                                .map-section__adres &Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;
+                                .map-section__metro &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;
+                            
+                        .col-lg-6.text-lg-start
+                                .map-section__time
+                                        | &Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;
+                                        br
+                                        |  &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00
+                                        br
+                                        |  &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00
+                                .map-section__prodag.mb0
+                                    | &Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:
+                                    br
+                                    |  &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00
+                .col-lg-2.col-md-2
+                     ul.navbar-nav.text-uppercase
+                        li.nav-item
+                            a.nav-link(href='#about') О клубе
+                        li.nav-item
+                            a.nav-link(href='#services') Услуги
+                        li.nav-item
+                            a.nav-link(href='#actions') Акции
+                        li.nav-item
+                            a.nav-link(href='#about') Цены
+                .col-lg-4.col-md-5
+                    .row.justify-content-center.align-items-center
+                        .col-lg-6.col-md-12
+                            .footer__api
+                                a(href='https://itunes.apple.com/ru/app/extra-sport/id1462883244?mt=8', onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    img(src='assets/img/app-store.png', alt='')
+                                a(href='https://play.google.com/store/apps/details?id=air.com.extrasport', onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    img(src='assets/img/goo-play.png', alt='')
+                        .col-lg-6.col-md-12
+                            .call
+                                a(href='#callModal' data-bs-toggle='modal')
+                                    .btn.btn-primary.btn-lg.fs-6
+                                        i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                                        | Заказать звонок
+        
+
+        .col-lg-12.background-black.py-2
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-start
+                        | &copy; 2023 ExtraSport, LLC
+                    .col-lg-4.my-3.my-lg-0
+                        a.text-decoration-none.me-2(href='#!') Правила поведения в клубе &nbsp; |
+                        a.text-decoration-none(href='#!') Правовая информация
+                    .col-lg-4.text-lg-end
+                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
+                            i.fab.fa-twitter
+                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
+                            i.fab.fa-facebook-f
+                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
+                            i.fab.fa-linkedin-in
+
 
 
 // Bootstrap core JS
