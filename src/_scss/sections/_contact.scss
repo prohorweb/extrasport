@@ -3,10 +3,14 @@
 //
 
 section#contact {
-    background-color: $black-transparency_5;
-    background-image: url("../../assets/img/map-image.png");
+    height: 100vh;
+    background-image: url("../../assets/img/bg_contact.jpeg");
+    // background-image: url("https://i.pinimg.com/originals/a1/af/7c/a1af7cde71b512cbbd439eed44527d1c.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: $black-transparency_5;
 
     .section-heading {
         color: $white;
@@ -23,6 +27,13 @@ section#contact {
 
             input.form-control {
                 height: auto;
+                color: #fff;
+                background-color: $black;
+                padding: 1rem;
+                border-bottom: 2px solid $orange;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
             }
         }
 
