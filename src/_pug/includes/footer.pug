@@ -1,20 +1,23 @@
 footer
     .footer-top.py-5
         .container
-            .row.align-items-center
-                .col-md-5
+            .row
+                .col-xl-6.col-md-4
                     .row
-                        .col-lg-7
-                           ul.map-section__list.p-0
+                        .col-xl-7
+                            ul.map-section__list.p-0
                                 li.map-section__phone
                                     i.fa-regular.fa-mobile
                                     a(href='tel:+78125655629') +7 812 565 56 29
-                                    
+
                                     //- a.popup-to.map-section__zvon(href='#zvon-popup') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
                                 li.map-section__adres &Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;
                                 li.map-section__metro &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;
-                                           
-                        .col-lg-5
+                            .d-flex.justify-content-start.mt-3 Мы в :
+                                    a.fa-brands.fa-vk.fs-2.ps-3(href='https://vk.com/extrasport_ru' target='_blunk')
+                                    a.fa-brands.fa-youtube.fs-2.ps-3(href='https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured' target='_blunk')
+
+                        .col-xl-5.d-none.d-xl-block
                             ul.map-section__list.p-0
                                 li.map-section__time
                                     | &Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;
@@ -23,55 +26,40 @@ footer
                                     br
                                     |  &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00
                                 li.map-section__prodag
+                                    //- i.fa-solid.fa-user-tie-hair
                                     | &Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:
                                     br
                                     |  &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00 
-                .col-md-2
-                    .d-flex.justify-content-evenly
-                        a.fa-brands.fa-vk.fs-1(href='https://vk.com/extrasport_ru', target='_blunk')
-                        a.fa-brands.fa-youtube.fs-1(href='https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured', target='_blunk')
-                    //-  ul.navbar-nav.text-uppercase
-                    //-     li.nav-item
-                    //-         a.nav-link(href='#about') О клубе
-                    //-     li.nav-item
-                    //-         a.nav-link(href='#services') Услуги
-                    //-     li.nav-item
-                    //-         a.nav-link(href='#actions') Акции
-                    //-     li.nav-item
-                    //-         a.nav-link(href='#about') Цены
+                .col-xl-6.col-md-8
+                    .row.align-items-center
+                        .col-lg-7
+                            .call.d-flex.justify-content-evenly.py-5
+                                    a(href='#callModal' data-bs-toggle='modal')
+                                        .btn.btn-primary.btn-lg.fs-6
+                                            i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                                            | Заказать звонок
+                        .col-lg-5                   
+                            .footer__api.d-flex.flex-lg-column.justify-content-center
+                                a.d-flex.align-items-center.justify-content-end.my-3.ps-3(href='https://itunes.apple.com/ru/app/extra-sport/id1462883244?mt=8' target='_blunk' onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    p.m-0.text-end Доступно в 
+                                        br 
+                                        b GOOGLE PLAY
+                                    i.fa-brands.fa-google-play.fs-1.ps-3
 
-                .col-md-3
-                    .call.d-flex.justify-content-evenly
-                        a(href='#callModal' data-bs-toggle='modal')
-                            .btn.btn-primary.btn-lg.fs-6
-                                i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
-                                | Заказать звонок
-                .col-md-2
-                    .footer__api.d-flex.flex-column.text-center
-                        a.my-3(href='https://itunes.apple.com/ru/app/extra-sport/id1462883244?mt=8', onclick="ym(21525628, 'reachGoal', 'download_app');")
-                            img.w-100(src='assets/img/app-store.png', alt='')
-
-                        a.my-3(href='https://play.google.com/store/apps/details?id=air.com.extrasport', onclick="ym(21525628, 'reachGoal', 'download_app');")
-                            img.w-100(src='assets/img/goo-play.png', alt='')
+                                a.d-flex.align-items-center.justify-content-end.my-3.ps-3(href='https://play.google.com/store/apps/details?id=air.com.extrasport' target='_blunk' onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    p.m-0.text-end Загрузите в 
+                                        br 
+                                        b APP STORE
+                                    i.fa-brands.fa-app-store-ios.fs-1.ps-3 
 
     .footer-bottom.col-lg-12
         .container
             .row
                 .col-md-4.text-md-start
                     | &copy; 2023 ExtraSport, LLC
-                //- .col-lg-4.my-3.my-lg-0
-                //-     a.text-decoration-none.me-2(href='#!') Правила поведения в клубе &nbsp; |
-                //-     a.text-decoration-none(href='#!') Правовая информация
                 .col-md-8.text-md-end
-                    a.text-decoration-none.me-2(href='#!') Правила поведения в клубе &nbsp; |
-                    a.text-decoration-none(href='#!') Правовая информация
-
-                    //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                    //-     i.fab.fa-twitter
-                    //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                    //-     i.fab.fa-facebook-f
-                    //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                    //-     i.fab.fa-linkedin-in
+                    a.text-decoration-none.me-2(href='#!' target='_blunk') Правила поведения в клубе &nbsp; |
+                    a.text-decoration-none(href='#!' target='_blunk') Правовая информация
 
 
 
