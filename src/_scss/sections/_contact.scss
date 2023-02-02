@@ -3,14 +3,14 @@
 //
 
 section#contact {
-    height: 100vh;
+    min-height: 80vh;
     background-image: url("../../assets/img/bg_contact.jpeg");
     // background-image: url("https://i.pinimg.com/originals/a1/af/7c/a1af7cde71b512cbbd439eed44527d1c.jpg");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
-    background-color: $black-transparency_5;
+    background-color: rgba(0, 0, 0, 0.6);
 
     .section-heading {
         color: $white;

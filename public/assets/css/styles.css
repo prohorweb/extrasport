@@ -8396,7 +8396,7 @@ html {
   scroll-padding-top: 4.5rem; }
 
 body {
-  background-color: #212529;
+  background-color: #141416;
   color: #fff;
   position: relative;
   overflow-x: hidden; }
@@ -8421,6 +8421,9 @@ a {
 
 .offcanvas-size-sm {
   --bs-offcanvas-width: min(95vw, 250px) !important; }
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0; }
 
 .btn.disabled {
   background: none;
@@ -8517,9 +8520,7 @@ a {
 
 @media (max-width: 991.98px) {
   #mainNav {
-    background-color: #212529; }
-  header.masthead {
-    margin-top: 5rem; } }
+    background-color: #212529; } }
 
 @media (max-width: 575.98px) {
   .logo,
@@ -8568,32 +8569,36 @@ header.masthead {
     font-weight: 300;
     text-transform: uppercase; }
 
+@media (max-width: 991.98px) {
+  header.masthead {
+    margin-top: 9rem; } }
+
 @media (max-width: 575.98px) {
-  header.masthead .masthead-heading {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 3.5rem;
-    margin-bottom: 4rem; }
-  header.masthead .masthead-subheading {
-    font-size: 1.25rem;
-    line-height: 2.25rem;
-    margin-bottom: 2rem; } }
+  header.masthead {
+    margin-top: 12rem; }
+    header.masthead .masthead-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 3.5rem;
+      margin-bottom: 4rem; }
+    header.masthead .masthead-subheading {
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 2rem; } }
 
 .bg-video-wrap {
   position: relative;
-  overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background: url(../../assets/video/video-bg.mp4); }
   .bg-video-wrap video {
     width: 100%;
-    height: 100vh;
-    z-index: 1;
+    height: 85vh;
     object-fit: cover;
     object-position: center center; }
   .bg-video-wrap .overlay {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -8601,17 +8606,15 @@ header.masthead {
     background-size: 3px 3px;
     z-index: 2; }
     .bg-video-wrap .overlay .slider {
-      margin: 20px auto;
-      position: relative;
-      font-size: 7vmin;
-      text-align: center; }
+      width: 100%;
+      font-size: 4rem;
+      font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
       .bg-video-wrap .overlay .slider .slide1,
       .bg-video-wrap .overlay .slider .slide2,
       .bg-video-wrap .overlay .slider .slide3,
       .bg-video-wrap .overlay .slider .slide4 {
+        position: absolute;
         color: white;
-        width: 100%;
-        height: 100%;
         text-shadow: 0px 0px 0 #bcbcbc, 1px 1px 0 #797979, 2px 2px 0 #363636, 3px 3px 2px rgba(0, 0, 0, 0.28), 3px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2); }
       .bg-video-wrap .overlay .slider .slide1 {
         animation: fade 18s infinite;
@@ -8703,13 +8706,13 @@ section#actions .card {
       color: #fff; }
 
 section#contact {
-  height: 100vh;
+  min-height: 80vh;
   background-image: url("../../assets/img/bg_contact.jpeg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: #00000070; }
+  background-color: rgba(0, 0, 0, 0.6); }
   section#contact .section-heading {
     color: #fff; }
   section#contact form#contactForm .form-group {
@@ -8763,10 +8766,10 @@ section#contact {
 .map-section__map {
   width: 100%;
   height: 100%;
-  z-index: -1;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  opacity: .6; }
   .map-section__map img {
     width: 100%;
     height: 100%;
@@ -8774,8 +8777,9 @@ section#contact {
     object-fit: cover; }
 
 .map-section__contacts {
-  background-color: #000000cc;
-  padding: 2rem; }
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  z-index: 2; }
 
 .map-section__title {
   text-transform: uppercase;
@@ -8791,7 +8795,8 @@ section#contact {
 
 .map-section__phone {
   padding: 0 !important;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .map-section__list li i {
   padding-right: 1rem;
@@ -8814,5 +8819,5 @@ section#contact {
 
 .footer-bottom {
   font-size: .85rem;
-  background-color: #141416;
+  background-color: #000;
   padding: .75rem 0; }

@@ -28,13 +28,21 @@ header.masthead {
         margin-bottom: 25px;
         font-family: $headings-font-family;
         font-weight: 300;
-        text-transform: uppercase; 
+        text-transform: uppercase;
     }
 
 }
 
+
+@include media-breakpoint-down(lg) {
+    header.masthead {
+      margin-top: 9rem;
+    }
+}
+
 @include media-breakpoint-down(sm) {
     header.masthead {
+        margin-top: 12rem;
 
         .masthead-heading {
             font-size: 2.5rem;
@@ -49,6 +57,6 @@ header.masthead {
             margin-bottom: 2rem;
         }
 
-        
+
     }
 }

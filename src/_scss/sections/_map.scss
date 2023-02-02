@@ -4,15 +4,16 @@
 .map-section {
 	position: relative;
 	z-index: 1;
-	padding: 6rem 0;
+	padding: 6rem 0;	
 }
+
 .map-section__map {
 	width: 100%; 
 	height: 100%;
-	z-index: -1;
 	position: absolute;
 	top: 0;
 	left: 0;
+    opacity: .6;
 	img { 
 		width: 100%;
 		height: 100%;
@@ -20,10 +21,13 @@
 		object-fit: cover;
 	}
 }
+
 .map-section__contacts {
-    background-color: $black-transparency_8;
+    background-color: rgba(0, 0, 0, 0.8);
 	padding: 2rem;
+	z-index: 2;
 }
+
 .map-section__title {
 	text-transform: uppercase;
 	margin: 2rem 0;
@@ -42,6 +46,7 @@
 .map-section__phone {
 	padding: 0 !important;
 	letter-spacing: .1rem;
+	font-family: $headings-font-family;
 	// background: url(../img/contact-phone.png) 0 50% no-repeat;
 }
 

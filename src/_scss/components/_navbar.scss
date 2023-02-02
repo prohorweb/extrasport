@@ -97,9 +97,6 @@
   #mainNav {
     background-color: $gray-900;
   }
-  header.masthead {
-    margin-top: 5rem;
-  }
 }
 
 @include media-breakpoint-only(xs) {
