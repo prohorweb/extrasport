@@ -82,14 +82,9 @@
 <section id="about">
   <div class="bg-video-wrap">
     <video src="assets/video/video-bg.mp4" loop="" muted="" autoplay=""></video>
-    <div class="overlay d-flex align-items-center">
-      <div class="slider d-flex justify-content-center align-items-center">
-        <div class="slide1"> <a href="#page-top">Бассейн 25 метров</a></div>
-        <div class="slide2"><a href="#page-top">Панорамный вид</a></div>
-        <div class="slide3"><a href="#page-top">Индивитуальный тренинг</a></div>
-        <div class="slide4"><a href="#page-top">Беговые дорожки
-            <!-- Actions--></a></div>
-      </div>
+    <div class="overlay">
+      <div class="slider"><a class="slide1 d-flex align-items-center justify-content-center" href="#page-top">Бассейн 25 метров</a><a class="slide2 d-flex align-items-center justify-content-center" href="#page-top">Панорамный вид</a><a class="slide3 d-flex align-items-center justify-content-center" href="#page-top">Индивитуальный тренинг</a><a class="slide4 d-flex align-items-center justify-content-center" href="#page-top">Беговые дорожки
+          <!-- Actions--></a></div>
     </div>
   </div>
 </section>
@@ -123,7 +118,7 @@
             </div></a>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 d-none d-lg-block">
         <div class="card">
           <div class="date-action">До 31 декабря</div><img class="card-img-top" src="assets/img/act_3.png" alt="..."><a class="card-body p-0" href="#">
             <div class="d-flex">
@@ -154,9 +149,9 @@
     <!-- to get an API token!-->
     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
       <div class="row justify-content-center">
-        <div class="col-lg-5">
+        <div class="col-lg-5 fs-5">
           <p>Хотите больше узнать о нашем клубе? Оставьте заявку, и наши менеджеры проведут для вас подробную экскурсию. </p>
-          <p>Для тех, кому экскурсии мало мы предлагаем «фитнес тест-драйв» — безлимитную неделю фитнеса, чтобы вы могли окончательно понять, насколько вам комфортно у нас.</p>
+          <p>Для тех, кому экскурсии мало, мы предлагаем услугу «фитнес тест-драйв» — безлимитную неделю фитнеса!</p>
         </div>
         <div class="col-lg-3">
           <div class="form-group">
@@ -203,14 +198,14 @@
 <section class="map-section">
   <div class="container">
     <div class="row d-flex justify-content-start">
-      <div class="map-section__contacts col-xl-4 col-md-7">
-        <h2 class="text-center map-section__title section-heading">Контакты</h2>
+      <div class="map-section__contacts">
+        <h2 class="map-section__title section-heading">Контакты</h2>
         <ul class="map-section__list"> 
           <li class="map-section__phone"><i class="fa-regular fa-mobile fs-4"></i><a class="fs-4" href="tel:+78125655629">+7 812 565 56 29</a></li>
-          <li class="map-section__adres">СПб, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</li>
-          <li class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</li>
-          <li class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
-          <li class="map-section__prodag">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</li>
+          <li class="map-section__adres"> <i class="fa-regular fa-location-dot"></i> СПб, ул. Типанова, 21, ТК «Питер»</li>
+          <li class="map-section__metro"> <i class="fa-regular fa-train-subway"></i>Московская, Звездная</li>
+          <li class="map-section__time"><i class="fa-regular fa-timer"></i>&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
+          <li class="map-section__prodag"><i class="fa-regular fa-user-tie-hair"></i>&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</li>
         </ul>
       </div>
     </div>
@@ -315,15 +310,15 @@
             <div class="col-xl-7">
               <ul class="map-section__list p-0">
                 <li class="map-section__phone"><i class="fa-regular fa-mobile"></i><a href="tel:+78125655629">+7 812 565 56 29</a></li>
-                <li class="map-section__adres">&Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;</li>
-                <li class="map-section__metro">&Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;</li>
+                <li class="map-section__adres"> <i class="fa-regular fa-location-dot"></i> СПб, ул. Типанова, 21, ТК «Питер»</li>
+                <li class="map-section__metro"> <i class="fa-regular fa-train-subway"></i>Московская, Звездная</li>
               </ul>
               <div class="d-flex justify-content-start mt-3">Мы в :<a class="fa-brands fa-vk fs-2 ps-3" href="https://vk.com/extrasport_ru" target="_blunk"></a><a class="fa-brands fa-youtube fs-2 ps-3" href="https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured" target="_blunk"></a></div>
             </div>
             <div class="col-xl-5 d-none d-xl-block">
               <ul class="map-section__list p-0">
-                <li class="map-section__time">&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
-                <li class="map-section__prodag">&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00 </li>
+                <li class="map-section__time"><i class="fa-regular fa-timer"></i>&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
+                <li class="map-section__prodag"><i class="fa-regular fa-user-tie-hair"></i>&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</li>
               </ul>
             </div>
           </div>

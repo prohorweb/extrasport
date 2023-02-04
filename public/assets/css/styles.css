@@ -8556,14 +8556,14 @@ header.masthead {
   background-blend-mode: overlay;
   background-color: #00000070; }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 5vmax;
+    color: #ff6600;
     font-weight: 700;
-    line-height: 5.25rem;
     margin-bottom: 2rem;
-    font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-shadow: #bdbdbd 0px 0px 0px, #787878 2px 5px 0px, #363636 2px 2px 0px, rgba(0, 0, 0, 0.28) 3px 3px 2px, rgba(0, 0, 0, 0.5) 3px 3px 1px, rgba(0, 0, 0, 0.2) 0px 0px 2px; }
   header.masthead .masthead-subheading {
     font-size: 2.5rem;
-    line-height: 1.5rem;
     margin-bottom: 25px;
     font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 300;
@@ -8589,33 +8589,29 @@ header.masthead {
 .bg-video-wrap {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 75vh;
   background: url(../../assets/video/video-bg.mp4); }
   .bg-video-wrap video {
     width: 100%;
-    height: 85vh;
+    height: 75vh;
     object-fit: cover;
     object-position: center center; }
   .bg-video-wrap .overlay {
     width: 100%;
-    height: 85vh;
+    height: 75vh;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 50%);
-    background-size: 3px 3px;
-    z-index: 2; }
+    background-color: rgba(0, 0, 0, 0.6); }
     .bg-video-wrap .overlay .slider {
       width: 100%;
-      font-size: 4rem;
       font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-      .bg-video-wrap .overlay .slider .slide1,
-      .bg-video-wrap .overlay .slider .slide2,
-      .bg-video-wrap .overlay .slider .slide3,
-      .bg-video-wrap .overlay .slider .slide4 {
+      .bg-video-wrap .overlay .slider a {
         position: absolute;
-        color: white;
-        text-shadow: 0px 0px 0 #bcbcbc, 1px 1px 0 #797979, 2px 2px 0 #363636, 3px 3px 2px rgba(0, 0, 0, 0.28), 3px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2); }
+        font-size: 5vmax;
+        text-shadow: 0px 0px 0 #bcbcbc, 1px 1px 0 #797979, 2px 2px 0 #363636, 3px 3px 2px rgba(0, 0, 0, 0.28), 3px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, 0.2);
+        height: -webkit-fill-available;
+        width: -webkit-fill-available; }
       .bg-video-wrap .overlay .slider .slide1 {
         animation: fade 18s infinite;
         -webkit-animation: fade 18s infinite; }
@@ -8706,7 +8702,7 @@ section#actions .card {
       color: #fff; }
 
 section#contact {
-  min-height: 80vh;
+  min-height: 75vh;
   background-image: url("../../assets/img/bg_contact.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -8769,7 +8765,7 @@ section#contact {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .6; }
+  opacity: .85; }
   .map-section__map img {
     width: 100%;
     height: 100%;
@@ -8778,19 +8774,20 @@ section#contact {
 
 .map-section__contacts {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem;
-  z-index: 2; }
+  padding: 3rem;
+  z-index: 2;
+  width: auto; }
 
 .map-section__title {
   text-transform: uppercase;
-  margin: 2rem 0; }
+  margin-bottom: 3rem; }
 
 .map-section__list {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .map-section__list li {
-  padding-left: 2rem;
   margin: .75rem 0; }
 
 .map-section__phone {
@@ -8801,21 +8798,6 @@ section#contact {
 .map-section__list li i {
   padding-right: 1rem;
   color: #ff6600; }
-
-.map-section__adres {
-  background: url(../img/contact-adres.png) 0 50% no-repeat; }
-
-.map-section__metro {
-  background: url(../img/contact-metro.png) 0 50% no-repeat; }
-
-.map-section__time {
-  background: url(../img/contact-time.png) 0 50% no-repeat; }
-
-.map-section__prodag {
-  background: url(../img/contact-prodag.png) 0 50% no-repeat; }
-
-.map-section__mail {
-  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxNCAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQgMTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjRkY2NjAwIiBkPSJNNywwSDB2NC43VjEwaDdoN1Y0LjdWMEg3eiBNNywxLjZoNS40djAuN0w3LDUuMkwxLjYsMi4zVjEuNkg3eiBNMTIuNCw4LjVIN0gxLjZWNC43VjRMNyw3TDEyLjQsNHYwLjZWOC41egoJIi8+Cjwvc3ZnPgo=") 0 50%/18px auto no-repeat; }
 
 .footer-bottom {
   font-size: .85rem;
