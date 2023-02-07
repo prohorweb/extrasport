@@ -41,8 +41,20 @@
                 button.btn-close.btn-close-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
             .offcanvas-body.justify-content-center
                 ul.navbar-nav.text-uppercase
-                    li.nav-item
-                        a.nav-link(href='#about') О клубе
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            | О клубе
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item(href='#') Обзор клуба
+                            li
+                                a.dropdown-item(href='#') Тренеры
+                            li
+                                a.dropdown-item(href='#') Истории успеха
+                            li
+                                a.dropdown-item(href='#') Вакансии
+                            li
+                                a.dropdown-item(href='#') Советы тренеров
                     li.nav-item
                         a.nav-link(href='#services') Услуги
                     li.nav-item

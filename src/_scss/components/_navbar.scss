@@ -2,7 +2,7 @@
 // Navbar
 //
 
-#mainNav {
+#mainNav, .dropdown-menu {
   font-size: 0.5rem;
   background-color: $black-transparency_5;
   padding-top: 1.5rem;
@@ -10,7 +10,6 @@
   border: none;
   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 
-    
   .navbar__adress {
     font-size: .85rem;
     margin-top: .5rem;
@@ -61,16 +60,17 @@
     .nav-item {
       margin: 0 0.25rem;
 
-      .nav-link {
+      .nav-link,.dropdown-item {
         font-family: $headings-font-family;
         color: $white;
         letter-spacing: $headings-letter-spacing;
         white-space: nowrap;
-        font-size: 2em;
+        font-size: 1rem;
 
         &.active,
         &:hover {
           color: $primary;
+          background: none;
         }
 
         &:last-child {
@@ -85,7 +85,7 @@
   #mainNav {
     .navbar-nav {
       .nav-item {
-        .nav-link {
+        .nav-link,.dropdown-item {
           font-size: 1.5em;
         }
       }

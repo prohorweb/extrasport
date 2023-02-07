@@ -8467,22 +8467,22 @@ input:focus::-webkit-input-placeholder {
   justify-content: center;
   padding: 0; }
 
-#mainNav {
+#mainNav, .dropdown-menu {
   font-size: 0.5rem;
   background-color: #00000070;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border: none;
   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out; }
-  #mainNav .navbar__adress {
+  #mainNav .navbar__adress, .dropdown-menu .navbar__adress {
     font-size: .85rem;
     margin-top: .5rem; }
-  #mainNav .navbar-toggler {
+  #mainNav .navbar-toggler, .dropdown-menu .navbar-toggler {
     font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-transform: uppercase;
     padding: 0;
     border: 0; }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand, .dropdown-menu .navbar-brand {
     color: #ff6600;
     font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
@@ -8491,34 +8491,36 @@ input:focus::-webkit-input-placeholder {
     margin: 0;
     font-size: 1.5em;
     transition: font-size 0.3s ease-in-out; }
-    #mainNav .navbar-brand img {
+    #mainNav .navbar-brand img, .dropdown-menu .navbar-brand img {
       height: 3rem; }
-  #mainNav .navbar-collapse {
+  #mainNav .navbar-collapse, .dropdown-menu .navbar-collapse {
     flex-grow: 0; }
-  #mainNav.navbar-shrink {
+  #mainNav.navbar-shrink, .dropdown-menu.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #212529; }
-    #mainNav.navbar-shrink .navbar-brand {
+    #mainNav.navbar-shrink .navbar-brand, .dropdown-menu.navbar-shrink .navbar-brand {
       font-size: 1.25em; }
       #mainNav.navbar-shrink .navbar-brand svg,
-      #mainNav.navbar-shrink .navbar-brand img {
+      #mainNav.navbar-shrink .navbar-brand img, .dropdown-menu.navbar-shrink .navbar-brand svg,
+      .dropdown-menu.navbar-shrink .navbar-brand img {
         height: 2.5rem; }
-  #mainNav .navbar-nav .nav-item {
+  #mainNav .navbar-nav .nav-item, .dropdown-menu .navbar-nav .nav-item {
     margin: 0 0.25rem; }
-    #mainNav .navbar-nav .nav-item .nav-link {
+    #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item, .dropdown-menu .navbar-nav .nav-item .nav-link, .dropdown-menu .navbar-nav .nav-item .dropdown-item {
       font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       color: azure;
       letter-spacing: 0.0625em;
       white-space: nowrap;
-      font-size: 2em; }
-      #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-        color: #ff6600; }
-      #mainNav .navbar-nav .nav-item .nav-link:last-child {
+      font-size: 1rem; }
+      #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .dropdown-item.active, #mainNav .navbar-nav .nav-item .dropdown-item:hover, .dropdown-menu .navbar-nav .nav-item .nav-link.active, .dropdown-menu .navbar-nav .nav-item .nav-link:hover, .dropdown-menu .navbar-nav .nav-item .dropdown-item.active, .dropdown-menu .navbar-nav .nav-item .dropdown-item:hover {
+        color: #ff6600;
+        background: none; }
+      #mainNav .navbar-nav .nav-item .nav-link:last-child, #mainNav .navbar-nav .nav-item .dropdown-item:last-child, .dropdown-menu .navbar-nav .nav-item .nav-link:last-child, .dropdown-menu .navbar-nav .nav-item .dropdown-item:last-child {
         margin-right: 0; }
 
 @media (max-width: 1199.98px) {
-  #mainNav .navbar-nav .nav-item .nav-link {
+  #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item {
     font-size: 1.5em; } }
 
 @media (max-width: 991.98px) {
@@ -8759,7 +8761,8 @@ section#contact {
 .map-section {
   position: relative;
   z-index: 1;
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  height: 75vh; }
 
 .map-section__map {
   width: 100%;
