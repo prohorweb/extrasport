@@ -17,9 +17,12 @@ section#actions {
     }
     
     .card-img-top {
-      opacity: .85;
+      opacity: .75;
     }
     &:hover {
+      .card-img-top {
+        opacity: 1;
+      }
       .card-body {
         background-color:$orange;
         color: $white;

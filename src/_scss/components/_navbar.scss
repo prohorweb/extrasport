@@ -97,14 +97,16 @@
   #mainNav {
     background-color: $gray-900;
   }
+  .fixed-top {
+    position: relative;
+  }
 }
 
-@include media-breakpoint-only(xs) {
-  .logo,
-  .navbar-toggler {
+@include media-breakpoint-down(md) {
+  .logo, .nav-burger{
     width: 100%;
-  }
-  .navbar-toggler {
-    margin-top: .5rem;
-  }
+  } 
+  .nav-burger{
+    margin-top: 1.5rem;
+  } 
 }

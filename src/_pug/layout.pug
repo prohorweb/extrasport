@@ -5,38 +5,7 @@ html(lang='en')
         include includes/head
 
     body#page-top
-        
-        block navbar
-            // Navigation 
-            include includes/components/navbar
-
-        block masthead 
-            // Masthead
-            include includes/sections/masthead 
-
-        block about 
-            // About
-            include includes/sections/about
-
-        block actions
-            // Actions
-            include includes/sections/actions
-
-        block contacts
-            // Contact
-            include includes/sections/contacts
-
-        block map
-            // Map
-            include includes/sections/map
-
-        block callModal
-            // Modals
-            include includes/components/callModal
-
-        block footer 
-            // Footer
-            include includes/footer 
+        block main
 
     // Bootstrap core JS
     script(src='https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.1/minified.js')
@@ -52,4 +21,4 @@ html(lang='en')
     // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-    script(src='assets/js/sb-forms.js')     
+    script(src='assets/js/sb-forms.js')

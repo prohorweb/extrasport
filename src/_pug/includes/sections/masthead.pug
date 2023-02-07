@@ -1,5 +1,14 @@
 header.masthead.d-flex.align-items-center
-    .container        
+    .container  
+        case isIndex
+            when true
+                .d-flex.justify-content-center
+                    .col-md-6
+                        img.w-100(src='assets/img/logo.svg' alt='extrasport logo')
+                
         .masthead-heading.text-uppercase Сеть фитнес клубов на результат!
-        .masthead-subheading Ваш клуб - ExtraSport Питер
-        a.btn.btn-primary.btn-xl.text-uppercase(href='/club.html') Выберите клуб
+        case isIndex
+            when true
+                a.btn.btn-primary.btn-xl.text-uppercase.white(href='/club.html') Выберите клуб
+            default
+                .masthead-subheading Ваш клуб - ExtraSport Питер

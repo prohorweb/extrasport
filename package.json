@@ -8,7 +8,7 @@
     "css-deploy": "npm run css-build && npm run css-postcss",
     "files-build": "cpx src/_assets/**/* public/assets",
     "files-watch": "npm run files-build -- --watch",
-    "pug-build": "pug -o public/ src/_pug/ --pretty ",
+    "pug-build": "pug -o public/ src/_pug/pages/ --",
     "pug-watch": "npm run pug-build -- --watch",
     "js-build": "cpx src/_js/* public/assets/js",
     "js-watch": "npm run js-build -- --watch ",
@@ -16,9 +16,10 @@
     "gh-deploy": "gh-pages --dist public --branch deploy",
     "browser-sync-watch": "browser-sync start --server public --files public",
     "clean": "rimraf public",
+    "clean-includes": "rimraf public/includes",
     "build": "npm-run-all --parallel css-build js-build pug-build files-build",
     "server": "npm-run-all --parallel css-watch js-watch pug-watch files-watch browser-sync-watch",
-    "deploy": "npm-run-all --parallel css-deploy js-deploy pug-build files-build gh-deploy"
+    "deploy": "npm-run-all --parallel css-deploy js-deploy pug-build files-build clean-includes gh-deploy"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",

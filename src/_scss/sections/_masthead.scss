@@ -25,7 +25,7 @@ header.masthead {
     }
 
     .masthead-subheading {
-        font-size: 2.5rem;
+        font-size: 3vmax;
         // line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: $headings-font-family;
@@ -36,16 +36,14 @@ header.masthead {
 }
 
 
-@include media-breakpoint-down(lg) {
-    header.masthead {
-      margin-top: 9rem;
-    }
-}
+// @include media-breakpoint-down(lg) {
+//     header.masthead {
+//       margin-top: 9rem;
+//     }
+// }
 
 @include media-breakpoint-down(sm) {
     header.masthead {
-        margin-top: 12rem;
-
         .masthead-heading {
             font-size: 2.5rem;
             font-weight: 700;
