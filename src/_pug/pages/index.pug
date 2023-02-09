@@ -1,5 +1,7 @@
 extends ../layout.pug
 
+block nav
+
 block main
 
         - var isIndex = true
@@ -10,11 +12,6 @@ block main
         // Actions
         include ../includes/sections/clubs
 
-        // Map
+block map
+        //Map
         include ../includes/sections/clubs-map
-
-        // Modals
-        include ../includes/components/callModal
-
-        // Footer
-        include ../includes/footer 

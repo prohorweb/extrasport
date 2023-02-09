@@ -4,7 +4,7 @@
   border-radius: 0 !important; }
 
 /*!
-   * Bootstrap  v5.2.2 (https://getbootstrap.com/)
+   * Bootstrap  v5.2.3 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -4741,7 +4741,6 @@ textarea.form-control-lg {
 .carousel-item-prev {
   display: block; }
 
-/* rtl:begin:ignore */
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
   transform: translateX(100%); }
@@ -4750,7 +4749,6 @@ textarea.form-control-lg {
 .active.carousel-item-start {
   transform: translateX(-100%); }
 
-/* rtl:end:ignore */
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-property: opacity;
@@ -8440,7 +8438,7 @@ input:focus::-webkit-input-placeholder {
   padding: 0.5rem 1rem;
   color: #ff6600;
   white-space: nowrap;
-  border: 0.1em solid;
+  border: 0.1em solid #ff6600;
   text-transform: uppercase; }
 
 .btn-lg, .btn-group-lg > .btn {

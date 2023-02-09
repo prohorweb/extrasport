@@ -4,21 +4,19 @@ html(lang='en')
     block head
         include includes/head
 
-    body#page-top
-        block main
+body#page-top
+    block nav
+        // Navigation 
+        include includes/components/navbar    
+    
+    block main
 
-    // Bootstrap core JS
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.1/minified.js')
+    block map
+        // Map
+        include includes/sections/map
 
-    // Bootstrap core JS
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-    // Core theme JS
-    script(src='assets/js/app.js')
-
-    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    // * *                               SB Forms JS                               * *
-    // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-    script(src='assets/js/sb-forms.js')
+    block footer
+        // Modals
+        include includes/components/callModal
+        // Footer
+        include includes/footer
