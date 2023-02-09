@@ -1,0 +1,57 @@
+
+<section class="map-section">
+  <div class="container">
+    <div class="row d-flex justify-content-start">
+      <div class="map-section__contacts">
+        <h2 class="map-section__title section-heading">Контакты</h2>
+        <ul class="map-section__list"> 
+          <li class="map-section__phone"><i class="fa-regular fa-mobile fs-4"></i><a class="fs-4" href="tel:+78125655629">+7 812 565 56 29</a></li>
+          <li class="map-section__adres"> <i class="fa-regular fa-location-dot"></i> СПб, ул. Типанова, 21, ТК «Питер»</li>
+          <li class="map-section__metro"> <i class="fa-regular fa-train-subway"></i>Московская, Звездная</li>
+          <li class="map-section__time"><i class="fa-regular fa-timer"></i>&Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;<br/> &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00<br/> &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00</li>
+          <li class="map-section__prodag"><i class="fa-regular fa-user-tie-hair"></i>&Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:<br/> &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="map-section__map" id="map"> </div>
+</section>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"> </script>
+<script>
+   ymaps.ready(init);
+   function init () {
+   // Создание экземпляра карты и его привязка к контейнеру с
+   // заданным id ("map")
+   var myMap = new ymaps.Map('map', {
+   // При инициализации карты, обязательно нужно указать
+   // ее центр и коэффициент масштабирования
+   center: [59.85360052406893,30.342187441412534],
+   zoom: 16,
+   controls: []
+   },{suppressMapOpenBlock: true});
+   var pixelCenter = myMap.getGlobalPixelCenter();
+   pixelCenter = [
+   pixelCenter[0] - 200, // Смещение на 200 пикселей вправо
+   pixelCenter[1]
+   ];
+   var geoCenter = myMap.options.get('projection').fromGlobalPixels(pixelCenter, myMap.getZoom());
+   myMap.setCenter(geoCenter);
+   //myMap.controls.add('zoomControl', { top: 75, left: 5 });
+   //myMap.behaviors.enable('scrollZoom');
+   // Создание метки
+   var myPlacemark = new ymaps.Placemark(
+   // Координаты метки
+  [59.85360052406893,30.342187441412534], {
+   // Свойства
+   // Текст метки
+   hintContent: 'ExtraSport'
+   }, {
+   iconLayout: 'default#image',
+   iconImageHref: 'assets/img/marker.png', // картинка иконки
+   iconImageSize: [57, 80], // размеры картинки
+   iconImageOffset: [-28, -80] // смещение картинки
+   });
+   // Добавление метки на карту
+   myMap.geoObjects.add(myPlacemark);
+   }
+</script>

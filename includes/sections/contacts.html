@@ -1,0 +1,59 @@
+
+<section class="page-section d-flex align-items-center" id="contact">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Фитнес тест-драйв</h2>
+    </div>
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- * * SB Forms Contact Form * *-->
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- This form is pre-integrated with SB Forms.-->
+    <!-- To make this form functional, sign up at-->
+    <!-- https://startbootstrap.com/solution/contact-forms-->
+    <!-- to get an API token!-->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 fs-5">
+          <p>Хотите больше узнать о нашем клубе? Оставьте заявку, и наши менеджеры проведут для вас подробную экскурсию. </p>
+          <p>Для тех, кому экскурсии мало, мы предлагаем услугу «фитнес тест-драйв» — безлимитную неделю фитнеса!</p>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <!-- Name input-->
+            <input class="form-control" id="name" type="text" placeholder="Ваше имя *" data-sb-validations="required"/>
+            <div class="invalid-feedback" data-sb-feedback="name:required">Имя обязательно *</div>
+          </div>
+          <div class="form-group">
+            <!-- Phone number input-->
+            <input class="form-control" id="phone" type="tel" placeholder="Ваш телефон*" data-sb-validations="required"/>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">Телефон обязательно *</div>
+            <div class="checkbox">
+              <input id="soglas-2" type="checkbox" name="accept" value="1"/> 
+              <label for="soglas-2"></label>&Ocy;&zcy;&ncy;&acy;&kcy;&ocy;&mcy;&lcy;&iecy;&ncy; &scy; <a href="/privacy/" target="_blank">&pcy;&ocy;&lcy;&icy;&tcy;&icy;&kcy;&ocy;&jcy; &kcy;&ocy;&ncy;&fcy;&icy;&dcy;&iecy;&ncy;&tscy;&icy;&acy;&lcy;&softcy;&ncy;&ocy;&scy;&tcy;&icy;
+                <!-- Submit success message--></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <!-- This is what your users will see when the form-->
+      <!-- has successfully submitted-->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center text-white mb-3">
+          <div class="fw-bolder">Заявка отправлена!</div><br/><a href="#"> </a>
+        </div>
+      </div>
+      <!-- Submit error message-->
+      <!---->
+      <!-- This is what your users will see when there is-->
+      <!-- an error submitting the form-->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+      <!-- Submit Button-->
+      <div class="text-center">
+        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Записаться</button>
+      </div>
+    </form>
+  </div>
+</section>
