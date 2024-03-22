@@ -1,0 +1,112 @@
+//
+// Navbar
+//
+
+#mainNav, .dropdown-menu {
+  font-size: 0.5rem;
+  background-color: $black-transparency_5;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+
+  .navbar__adress {
+    font-size: .85rem;
+    margin-top: .5rem;
+  }
+
+  .navbar-toggler {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+  }
+
+  .navbar-brand {
+    color: $primary;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    letter-spacing: $headings-letter-spacing;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  &.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $gray-900;
+
+    .navbar-brand {
+      font-size: 1.25em;
+
+      svg,
+      img {
+        height: 2.5rem;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 0.25rem;
+
+      .nav-link,.dropdown-item {
+        font-family: $headings-font-family;
+        color: $white;
+        letter-spacing: $headings-letter-spacing;
+        white-space: nowrap;
+        font-size: 1rem;
+
+        &.active,
+        &:hover {
+          color: $primary;
+          background: none;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  #mainNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link,.dropdown-item {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  #mainNav {
+    background-color: $gray-900;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .logo, .nav-burger{
+    width: 100%;
+  } 
+  .nav-burger{
+    margin-top: 1.5rem;
+  } 
+}

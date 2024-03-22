@@ -1,0 +1,102 @@
+footer
+    .footer-top.py-5
+        .container
+            .row
+                .col-xl-6.col-md-4
+                    .row
+                        case isIndex
+                            when true
+                                .col-lg-6.text-center
+                                    ul.map-section__list.p-0
+                                        li
+                                            a(href='https://piter.extrasport.ru') ТРЦ «Питер»
+                                        li
+                                            a(href='https://iyun.extrasport.ru') ТРЦ «Июнь»
+                                        li
+                                            a(href='https://polyus.extrasport.ru') ТРЦ «Южный полюс»
+
+
+                                .col-lg-6.text-center
+                                    ul.map-section__list.p-0
+                                        li
+                                            a(href='https://matros.extrasport.ru') «Матроса железняка»
+                                        li
+                                            a(href='https://de-vision.ru') De-Vision
+                                    .d-flex.justify-content-center.mt-3 Мы в:
+                                            a.fa-brands.fa-vk.fs-2.ps-3(href='https://vk.com/extrasport_ru' target='_blunk')
+                                            a.fa-brands.fa-youtube.fs-2.ps-3(href='https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured' target='_blunk')
+                            default
+                                .col-xl-7
+                                    ul.map-section__list.p-0
+                                        li.map-section__phone
+                                            i.fa-regular.fa-mobile
+                                            a(href='tel:+78125655629') +7 812 565 56 29
+
+                                            //- a.popup-to.map-section__zvon(href='#zvon-popup') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
+                                        li.map-section__adres &Scy;&pcy;&bcy;, &ucy;&lcy;. &Tcy;&icy;&pcy;&acy;&ncy;&ocy;&vcy;&acy;, 21, &Tcy;&Kcy; &laquo;&Pcy;&icy;&tcy;&iecy;&rcy;&raquo;
+                                        li.map-section__metro &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&acy;&yacy;, &Zcy;&vcy;&iecy;&zcy;&dcy;&ncy;&acy;&yacy;
+                                    .d-flex.justify-content-start.mt-3 Мы в :
+                                            a.fa-brands.fa-vk.fs-2.ps-3(href='https://vk.com/extrasport_ru' target='_blunk')
+                                            a.fa-brands.fa-youtube.fs-2.ps-3(href='https://www.youtube.com/channel/UCCUUiy9ZROCNHBmDvPF-dxw/featured' target='_blunk')
+
+                                .col-xl-5.d-none.d-xl-block
+                                    ul.map-section__list.p-0
+                                        li.map-section__time
+                                            | &Vcy;&rcy;&iecy;&mcy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;
+                                            br
+                                            |  &pcy;&ncy;&ndash;&pcy;&tcy;: &scy; 8:00 &dcy;&ocy; 22:00
+                                            br
+                                            |  &scy;&bcy;&ndash;&vcy;&scy;: &scy; 9:00 &dcy;&ocy; 22:00
+                                        li.map-section__prodag
+                                            //- i.fa-solid.fa-user-tie-hair
+                                            | &Ocy;&tcy;&dcy;&iecy;&lcy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;:
+                                            br
+                                            |  &pcy;&ncy;-&vcy;&scy;: 10:00 &dcy;&ocy; 22:00 
+                .col-xl-6.col-md-8
+                    .row.align-items-center
+                        .col-lg-7
+                            .call.d-flex.justify-content-evenly.py-5
+                                    a(href='#callModal' data-bs-toggle='modal')
+                                        .btn.btn-primary.btn-lg.fs-6
+                                            i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                                            | Заказать звонок
+                        .col-lg-5                   
+                            .footer__api.d-flex.flex-lg-column.justify-content-center
+                                a.d-flex.align-items-center.justify-content-end.my-3.ps-3(href='https://play.google.com/store/apps/details?id=air.com.extrasport' target='_blunk' onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    p.m-0.text-end Доступно в 
+                                        br 
+                                        b GOOGLE PLAY
+                                    i.fa-brands.fa-google-play.fs-1.ps-3
+
+                                a.d-flex.align-items-center.justify-content-end.my-3.ps-3(href='https://itunes.apple.com/ru/app/extra-sport/id1462883244?mt=8' target='_blunk' onclick="ym(21525628, 'reachGoal', 'download_app');")
+                                    p.m-0.text-end Загрузите в 
+                                        br 
+                                        b APP STORE
+                                    i.fa-brands.fa-app-store-ios.fs-1.ps-3 
+
+    .footer-bottom.col-lg-12
+        .container
+            .row
+                .col-md-4.text-md-start
+                    | &copy; 2023 ExtraSport, LLC
+                .col-md-8.text-md-end
+                    a.text-decoration-none.me-2(href='#!' target='_blunk') Правила поведения в клубе &nbsp; |
+                    a.text-decoration-none(href='#!' target='_blunk') Правовая информация
+
+
+
+// Bootstrap core JS
+script(src='https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.1/minified.js')
+
+// Bootstrap core JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+// Core theme JS
+script(src='assets/js/app.js')
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// * *                               SB Forms JS                               * *
+// * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+script(src='assets/js/sb-forms.js')

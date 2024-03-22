@@ -1,0 +1,80 @@
+#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+    .container
+        .logo 
+            a.navbar-brand.d-flex.align-items-center.justify-content-center(href='/') 
+                img(src='assets/img/logo.svg' alt='extrasport logo')
+            .navbar__adress.d-block.d-lg-none
+                .aderss-section.d-flex.justify-content-center
+                    i.fa-solid.fa-location-dot.pe-1  
+                    span.me-1 Ваш клуб:
+                    a.popup-to(href='/club.html') СПб, ул. Типанова, 21, ТК «Питер» 
+                     i.fa-solid.fa-chevron-down 
+                .aderss-section.d-flex.justify-content-center
+                    a.header-contacts__phone.fs-6(href='tel:+78125655613') +7 812 565 56 13
+        .call.d-lg-none.d-md-block.d-none 
+            a(href='#callModal' data-bs-toggle='modal') 
+                .btn.btn-primary.btn-lg
+                    i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                    |Обратный звонок
+        .nav-burger.d-block.d-lg-none.d-flex.justify-content-between          
+            .call.d-block.d-md-none
+                a(href='#callModal' data-bs-toggle='modal')
+                    .btn.btn-primary.btn-lg
+                        i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                        |Обратный звонок
+            button.navbar-toggler.d-flex.align-items-center.justify-content-end(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasDarkNavbar' aria-controls='offcanvasDarkNavbar') 
+                span МЕНЮ
+                span.navbar-toggler-icon
+
+        #offcanvasDarkNavbar.offcanvas.offcanvas-end.text-bg-dark.offcanvas-size-sm(tabindex='-1' aria-labelledby='offcanvasDarkNavbarLabel')
+            .d-none.d-lg-block
+                .navbar__adress.d-flex.align-items-center.justify-content-center
+                    .aderss-section
+                        i.fa-solid.fa-location-dot.pe-1 
+                        span.me-1 Ваш клуб:
+                        a.popup-to(href='/club.html') СПб, ул. Типанова, 21, ТК «Питер» 
+                         i.fa-solid.fa-chevron-down
+                    .aderss-section
+                        a.ms-3.header-contacts__phone(href='tel:+78125655613') +7 812 565 56 13
+            .offcanvas-header
+                h5#offcanvasDarkNavbarLabel.offcanvas-title EXTRASPORT ПИТЕР
+                button.btn-close.btn-close-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+            .offcanvas-body.justify-content-center
+                ul.navbar-nav.text-uppercase
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            | О клубе
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item(href='/1-about.html') Обзор клуба
+                            li
+                                a.dropdown-item(href='#') Тренеры
+                            li
+                                a.dropdown-item(href='#') Истории успеха
+                            li
+                                a.dropdown-item(href='#') Вакансии
+                            li
+                                a.dropdown-item(href='#') Советы тренеров
+                    li.nav-item
+                        a.nav-link(href='/service.html') Услуги
+                    li.nav-item
+                        a.nav-link(href='/actions.html') Акции
+                    li.nav-item
+                        a.nav-link(href='#') Цены
+                    li.nav-item
+                        a.nav-link(href='#') Новости
+                    li.nav-item
+                        a.nav-link(href='#') Мероприятия
+                    li.nav-item
+                        a.nav-link(href='#contacts') Контакты
+                    li.nav-item.d-block.d-sm-none
+                        a.nav-link(href='#callModal' data-bs-toggle='modal')
+                            .btn.btn-primary.btn-lg
+                                i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                                |Обратный звонок
+
+        .call.d-lg-block.d-none
+            a(href='#callModal' data-bs-toggle='modal')
+                .btn.btn-primary.btn-lg
+                    i.fa-sharp.fa-solid.fa-phone-arrow-down-left.me-1
+                    |Обратный звонок
