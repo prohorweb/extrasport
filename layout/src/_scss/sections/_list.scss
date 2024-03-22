@@ -1,0 +1,36 @@
+section {
+
+  a.card {
+    background-color: $black;
+    margin-bottom: 1.5rem;
+    border: none;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      height: 17rem;
+      width: 100%;
+      ;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: 200;
+      margin: 0;
+    }
+  }
+
+  a.page-link,
+  span.page-link {
+    background: none;
+    border: 0;
+    font-size: 1rem;
+  }
+
+  .page-link.is-current {
+    border-bottom: 1px solid !important;
+  }
+}

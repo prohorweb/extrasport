@@ -1,0 +1,33 @@
+#mainNav.navbar.navbar-expand-lg.navbar-dark.py-md-3
+    .container 
+
+        .logo 
+            a.navbar-brand(href='/') 
+                | НЕВСКОЕ БЛАГОЧИНИЕ
+        
+        .nav-burger
+            button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasDarkNavbar' aria-controls='offcanvasDarkNavbar' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+
+        #offcanvasDarkNavbar.offcanvas.offcanvas-end.offcanvas-size-sm(tabindex='-1' aria-labelledby='offcanvasDarkNavbarLabel')
+            //- .d-none.d-lg-block
+            //-     .navbar__adress.d-flex.align-items-center.justify-content-center
+            //-         .aderss-section
+            //-             span.me-1 НЕВСКОЕ БЛАГОЧИНИЕ | Санкт-Петербургская епархия
+            .offcanvas-header.pb-0
+                //- h5#offcanvasDarkNavbarLabel.offcanvas-title НЕВСКОЕ БЛАГОЧИНИЕ
+                button.btn-close.btn-close-white(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+            .offcanvas-body.pt-0.justify-content-end
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link(href='/') О благочинии
+                    li.nav-item
+                        a.nav-link(href='/list.html') Приходы
+                    li.nav-item
+                        a.nav-link(href='/news.html') Новости
+                    li.nav-item
+                        a.nav-link(href='#') Деятельность
+                    li.nav-item
+                        a.nav-link(href='#') Благотворительность
+                    li.nav-item
+                        a.nav-link(href='/#contacts') Контакты               

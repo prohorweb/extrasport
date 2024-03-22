@@ -1,0 +1,35 @@
+extends ../layout.pug
+
+block main
+    section.page-section
+        .container
+            .text-center
+                h3.section-subheading Новости благочиния
+            .row
+                .col-lg-4.col-md-6.d-flex
+                    a.card(href='/news_item.html')
+                        img(src='assets/img/news.jpeg' alt='...')
+                        .card-body.d-flex.justify-content-center.align-items-center
+                            .card-title  
+                                | Благочинный Невского округа иерей Дмитрий Малиновский принял участие в заседании Районного методического объединения заместителей заведующих и старших воспитателей детских садов Невского
+                .col-lg-4.col-md-6.d-flex
+                    a.card(href='/news_item.html')
+                        img(src='assets/img/news.jpeg' alt='...')
+                        .card-body.d-flex.justify-content-center.align-items-center
+                            .card-title  
+                                | Встреча благочинного Невского округа с персоналом ПНИ № 10″ имени В.Г. Горденчука, на улице А. Коллонтай
+                .col-lg-4.col-md-6.d-flex
+                    a.card(href='/news_item.html')
+                        img(src='assets/img/news.jpeg' alt='...')
+                        .card-body.d-flex.justify-content-center.align-items-center
+                            .card-title  
+                                | Благочинный Невского округа принял участие в совещании руководителей образовательных учреждений Невского района
+
+            nav.mt-3(aria-label='Page navigation example')
+                ul.pagination.justify-content-center
+                    li.page-item
+                        a.page-link.is-current(href='#') 1
+                    li.page-item
+                        a.page-link(href='#') 2
+                    li.page-item
+                        a.page-link(href='#') 3

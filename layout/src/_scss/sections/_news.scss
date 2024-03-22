@@ -1,0 +1,8 @@
+.page-section {
+  h3.news-title {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+    font-weight: 200;
+    color: $orange;
+    margin-bottom: 3rem;
+  }
+} 

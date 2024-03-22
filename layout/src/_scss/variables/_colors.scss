@@ -1,0 +1,24 @@
+//
+// Colors
+//
+// $white: azure;
+// Override Bootstrap color variables
+
+$orange: #ceb171; 
+$orange-dark:#845d1b;
+$black: #022626cc;
+$black-transparency_5: #163B3B70;
+$black-transparency_6: #163B3B99;
+$black-transparency_8: #163B3Bcc;
+// Override Bootstrap state colors variables
+
+$primary: $orange;
+
+// Override Bootstrap contrast ratio
+
+$min-contrast-ratio: 1.5;
+
+$white:azure;
+$green:#163B3B;
+
+$box-shadow: 10px 10px $orange-dark;
